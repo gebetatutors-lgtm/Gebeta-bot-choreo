@@ -13,6 +13,7 @@ from telegram.ext import (
 )
 
 # --- 1. Define Conversation States ---
+#      well we r doing this------
 FORM_FILLED, NAME, POSITION, LOCATION, EXPERIENCE, GROUP_PROOF, END = range(7)
 
 # --- 2. Setup Logging ---
@@ -253,5 +254,6 @@ except Exception as e:
     # In case of initialization failure, 'application' might be needed for the Procfile,
     # so we assign None or handle it gracefully, though Gunicorn will likely fail.
     application = None
+
 
 # No main() function or if __name__ == '__main__': is needed.
